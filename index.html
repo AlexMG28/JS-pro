@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+		<!-- integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Weather App</title>
+</head>
+
+<body>
+
+	<h1 class="title">Weather App</h1>
+	<div class="" id="form-container">
+		<form class="" id="form">
+			<input type="text" placeholder="Change your location..." name="" value="">
+			<button type="submit" name="button">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>
+	<div id="warning">
+	</div>
+	<div id="loader">
+		<img src="img/spinner.gif" alt="loader">
+	</div>
+
+	<div class="" id="main-flex">
+		<div class="container div-style">
+			<div>
+				<h1 class="city"></h1>
+				<h1 class="temperature"></h1>
+				<p class="date"></p>
+				<p class="min"></p>
+				<p class="max"></p>
+				<p class="rh"></p>
+			</div>
+			<div class="icon-info">
+				<img src="" alt="" class="icon">
+				<p class="description"></p>
+			</div>
+		</div>
+	</div>
+
+	<h2 id="t3" class="title t3">Next three days forecast</h2>
+	<div id="box-container"></div>
+
+	<script type="text/javascript" src="js/Request.js"></script>
+	<script type="text/javascript" src="js/UI.js"></script>
+	<script type="text/javascript" src="js/App.js"></script>
+</body>
+
+</html>
