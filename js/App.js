@@ -1,14 +1,6 @@
 const request1 = new Request;
 const ui = new UI;
 
-window.addEventListener('load', currentLocation);
-// event listners
-document.getElementById("form").addEventListener('submit',
-	(e) => {
-		e.preventDefault();
-		const city = document.querySelector("input").value;
-		requestInfo(city);
-	});
 
 // request info
 function requestInfo(city) {
@@ -94,3 +86,12 @@ function givenDay(d) {
 	return days[d];
 
 }
+
+window.addEventListener('load', currentLocation);
+// event listners
+document.getElementById("form").addEventListener('submit',
+	(e) => {
+		e.preventDefault();
+		const city = document.querySelector("input").value;
+		requestInfo(city);
+	});
