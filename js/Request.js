@@ -12,7 +12,7 @@ class Request {
 			temp: data.weather,
 			mes: data.sys,
 			name: data.name,
-			weather: data.weather
+			// weather: data.weather
 		};
 		return obj;
 	}

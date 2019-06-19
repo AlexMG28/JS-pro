@@ -78,7 +78,7 @@ function currentLocation() {
 // convert to celcius
 function celsius(n) {
 	const c = (parseFloat(n) - 32) * (5 / 9);
-	return Math.floor(c, 0);
+	return Math.floor(c);
 }
 // get the date
 function date() {

@@ -37,12 +37,12 @@ class UI {
 	// invalid city or city not found
 	warning(type) {
 		let warning = document.getElementById('warning');
-		warning.style.background = "red";
+		warning.style.background = "#f00";
 		warning.style.color = "#fff";
 		warning.style.display = "block";
-		if (type == "invalidCity") {
+		if (type === "invalidCity") {
 			warning.innerHTML = `<p>Please Enter a Valid City!</p>`;
-		} else if (type == "cityNotFound") {
+		} else if (type === "cityNotFound") {
 			warning.innerHTML = `<p>Oops... City not found!</p>`;
 		}
 		setTimeout(() => {
