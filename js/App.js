@@ -1,7 +1,6 @@
 const request1 = new Request;
 const ui = new UI;
 
-
 // request info
 function requestInfo(city) {
 	if (/^[a-zA-Z]/.test(city)) {
